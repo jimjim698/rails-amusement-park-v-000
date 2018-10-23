@@ -13,10 +13,10 @@ class ApplicationController < ActionController::Base
 
   def user_authenticated
     !!current_user
-  end 
+  end
 
   def verify_user_authenticated
     redirect_to '/' unless user_authenticated
-  end 
-  
+  end
+
 end
