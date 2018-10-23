@@ -1,4 +1,7 @@
 <p><%=@user.name%></p>
+<%if @user.admin%>
+  ADMIN
+  <%end%>
 <p><h3>Mood: <%=@user.mood%></h3></p>
 <p><h3>Height: <%=@user.height%></h3></p>
 <p><h3>Ticketst: <%=@user.tickets%></h3></p>
