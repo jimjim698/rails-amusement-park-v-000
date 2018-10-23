@@ -1,13 +1,13 @@
 class User < ActiveRecord::Base
   has_secure_password
-  
+
   def mood
     if !self.admin && self.happiness > self.nausea
       "happy"
-    else 
+    else
       "sad"
-    end 
-  end 
+    end
+  end
 
-  
+
 end
