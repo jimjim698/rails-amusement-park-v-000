@@ -2,6 +2,6 @@
 
 <%=form_tag ({controller: 'sessions', action: 'create', method:'post'}) do %>
 
-<%= collection_select(:user, :user_name, User.all, :name, :name, prompt: "Select a User") %>
+<%= collection_select(:user, :name, User.all, :name, :name, prompt: "Select a user_name") %>
 <%=submit_tag("Sign In")%>
 <%end%>
