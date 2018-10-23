@@ -1,12 +1,12 @@
 <h1>Add New Attraction</h1>
 
-<p><%=form_for @attraction do |f|%>
-<%=f.label :name%></p>
-<p><%=f.text_field :name%>
-<%=f.label :happiness_rating%></p>
-<p><%=f.text_field :happiness_rating%>
-<%=f.label :nausea_rating%></p>
-<p><%=f.text_field :nausea_rating%>
-<%=f.label :min_height%></p>
+<%=form_for @attraction do |f|%>
+<p><%=f.label :name%>
+<%=f.text_field :name%></p>
+<p><%=f.label :happiness_rating%>
+<%=f.text_field :happiness_rating%></p>
+<p><%=f.label :nausea_rating%>
+<%=f.text_field :nausea_rating%></p>
+<p><%=f.label :min_height%></p>
 <p><%=f.text_field :min_height%></p>
 <%end%>
