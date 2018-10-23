@@ -1,7 +1,7 @@
 class RidesController < ApplicationController
 
 
-  def create 
+  def create
     raise params.inspect
-  end 
+  end
 end
