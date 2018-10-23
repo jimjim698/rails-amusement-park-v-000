@@ -5,6 +5,6 @@
 <%if current_user.admin%>
 <%=link_to "New Attraction", new_attraction_path%>
 <%@attractions.each do |a|%>
-<p><%=link_to "Show #{attraction.name}", attraction_path(a)%></p>
+<p><%=link_to "Show #{a.name}", attraction_path(a)%></p>
 <%end%>
 <%end%>
