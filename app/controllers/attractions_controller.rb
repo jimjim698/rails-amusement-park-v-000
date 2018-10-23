@@ -2,13 +2,13 @@ class AttractionsController < ApplicationController
 
   def index
     @attractions = Attraction.all
-  end 
+  end
 
 
-  def show 
+  def show
     @attraction = Attraction.find(params[:id])
   end 
 
 
-  
+
 end
