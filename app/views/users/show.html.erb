@@ -1,9 +1,11 @@
-<p><%=@user.name%></p>
+<p><h1><%=@user.name%></h1></p>
 <%if @user.admin%>
   ADMIN
   <%end%>
 <p><h3>Mood: <%=@user.mood%></h3></p>
 <p><h3>Height: <%=@user.height%></h3></p>
 <p><h3>Tickets: <%=@user.tickets%></h3></p>
+
+
 
 <p><%=link_to "Log Out", logout_path, method: 'delete' %> </p>
