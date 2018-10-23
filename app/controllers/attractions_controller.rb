@@ -17,6 +17,8 @@ class AttractionsController < ApplicationController
   end
 
   def create
+    @attraction = Attraction.new(attraction_params)
+    @attraction.save 
   end
 
 
