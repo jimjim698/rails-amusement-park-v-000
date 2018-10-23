@@ -3,6 +3,7 @@ class Ride < ActiveRecord::Base
   belongs_to :user
 
   def tall_enough
+    binding.pry
     self.user.height >= self.attraction.min_height
   end
 
@@ -28,5 +29,5 @@ class Ride < ActiveRecord::Base
     tickets = self.user.tickets - self.attraction.tickets
     self.user.update(happiness: happiness, nausea: nausea, tickets: tickets)
     "Thanks for riding the #{self.attraction.name}"
-  end      
+  end
 end
