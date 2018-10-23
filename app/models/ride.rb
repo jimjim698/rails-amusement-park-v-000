@@ -24,7 +24,7 @@ class Ride < ActiveRecord::Base
   end
 
   def ride
-    binding.pry
+    
     happiness = self.user.happiness + self.attraction.happiness_rating
     nausea = self.user.nausea + self.attraction.nausea_rating
     tickets = self.user.tickets - self.attraction.tickets
