@@ -23,7 +23,7 @@ class AttractionsController < ApplicationController
   end
 
   def edit
-    raise params.inspect
+    @attraction = Attraction.find(params[:id])
   end
 
 
