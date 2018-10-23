@@ -27,6 +27,7 @@ class AttractionsController < ApplicationController
   end
 
   def update
+    raise params.inspect
     @attraction.update(attraction_params)
     redirect_to attraction_path(@attraction)
 
