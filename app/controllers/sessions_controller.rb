@@ -11,5 +11,10 @@ skip_before_action :verify_user_authenticated, only:[:new, :create]
   end
 
 
+def destroy
+  session.delete :user_id
+  redirect_to '/'
+end 
+
 
 end
