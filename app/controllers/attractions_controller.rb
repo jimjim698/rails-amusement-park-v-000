@@ -8,6 +8,7 @@ class AttractionsController < ApplicationController
 
   def show
     @attraction = Attraction.find(params[:id])
+    @ride = @attraction.rides.build(user_id: params[:session][:user_id])
   end
 
 
