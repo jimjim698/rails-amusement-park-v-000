@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :verify_user_authenticated
+  skip_before_action :verify_user_authenticated[:home]
   helper_method :current_user
 
   def home
