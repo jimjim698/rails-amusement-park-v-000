@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  before_action :verify_user_authenticated
+  helper_method :current_user
 
   def home
   end
@@ -12,4 +14,9 @@ class ApplicationController < ActionController::Base
   def user_authenticated
     !!current_user
   end 
+
+  def verify_user_authenticated
+    redirect_to '/' unless user_authenticated
+  end 
+  
 end
