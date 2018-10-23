@@ -26,6 +26,6 @@ class AttractionsController < ApplicationController
 
   def attraction_params
     params.require(:attraction).require(:name, :happiness_rating, :nausea_rating, :min_height, :tickets)
-  end 
+  end
 
 end
