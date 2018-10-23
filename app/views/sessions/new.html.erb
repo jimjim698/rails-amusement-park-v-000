@@ -2,5 +2,5 @@
 
 <%=form_tag ({controller: 'sessions', action: 'create', method:'post'}) do %>
 
-<%= collection_select(User.all, :id, :name) %>
+<%= collection_select(:user, :name, User.all, :id, :name) %>
 <%end%>
