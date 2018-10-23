@@ -22,6 +22,10 @@ class AttractionsController < ApplicationController
     redirect_to attraction_path(@attraction)
   end
 
+  def edit 
+    raise params.inspect
+  end 
+
 
   private
 
