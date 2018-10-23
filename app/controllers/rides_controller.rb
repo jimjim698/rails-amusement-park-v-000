@@ -3,8 +3,8 @@ class RidesController < ApplicationController
 
   def create
     ride = Ride.create(ride_params)
-    ride.take_ride
-    redirect_to user_path(session[:user_id])
+    message = ride.take_ride
+    redirect_to user_path(session[:user_id]), flash: {message: message}
   end
 
 
