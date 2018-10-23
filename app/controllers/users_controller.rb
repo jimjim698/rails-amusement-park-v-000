@@ -30,7 +30,7 @@ class UsersController < ApplicationController
 
   def require_login
     if !current_user
-      redirect_to login_path
+      redirect_to signin_path
     end
   end
 end
