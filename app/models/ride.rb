@@ -15,7 +15,6 @@ class Ride < ActiveRecord::Base
     if tall_enough && enough_tickets
       ride
     elsif
-      binding.pry
       !tall_enough && enough_tickets
       "You are not tall enough to ride the #{self.attraction.name}"
     elsif
