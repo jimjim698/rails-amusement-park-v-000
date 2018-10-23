@@ -26,11 +26,11 @@ class UsersController < ApplicationController
 
 
 
-  private 
+  private
 
   def require_login
     if !current_user
       redirect_to login_path
-    end 
-  end 
+    end
+  end
 end
