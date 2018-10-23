@@ -3,7 +3,7 @@ class Ride < ActiveRecord::Base
   belongs_to :user
 
   def tall_enough
-    
+
     self.user.height >= self.attraction.min_height
   end
 
